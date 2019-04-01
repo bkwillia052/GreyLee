@@ -312,13 +312,23 @@ header h1 {
   height: 100%;
   width: 100vw;
   opacity: 0.13;
+  display: none;
 }
 
 @media only screen and (max-width: 415px) {
   .album-fg {
     width: 535px;
   }
+  .gemini-sym {
+    display: block;
+  }
   .imageCont {
     height: 90%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .album-fg {
+    width: 500px;
   }
 }
