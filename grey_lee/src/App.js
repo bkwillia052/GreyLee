@@ -191,7 +191,7 @@ class App extends Component {
             <div className="media-container">
               <div className="media-txt">ZEN</div>
               <audio
-                className="site-audio"
+                className="site-audio 1"
                 controls
                 autoPlay
                 src={require("./audio/Grey Lee - Zen_1.mp3")}
