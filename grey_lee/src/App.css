@@ -1,0 +1,324 @@
+.App {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  height: 25%;
+  align-items: center;
+  z-index: 12;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 1px black;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 100px;
+  text-shadow: 1px 1px 1px black;
+  font-family: fantasy;
+}
+
+.imageCont {
+  display: flex;
+  width: 50%;
+  height: 68%;
+  position: relative;
+  min-width: 750px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .imageCont {
+    width: 80%;
+    height: 95%;
+    max-width: 1120px;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .imageCont {
+    width: 65%;
+    height: 97%;
+    max-width: unset;
+  }
+}
+
+.imageCont2 {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pg2Cont {
+  background: url("./imgs/greylee_siteBG2.jpg");
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background-position: right;
+}
+
+.mainBoxPG2 {
+  display: flex;
+  position: relative;
+  width: 85%;
+  height: 80%;
+}
+
+.bgImageP2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.mainImagePG2 {
+  position: relative;
+}
+
+.bgImage {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+.bgImage2 {
+  position: absolute;
+  width: 92.5%;
+  height: 70.5;
+  z-index: -2;
+  opacity: 0.6;
+}
+
+.stripe1 {
+  position: absolute;
+  background: darkred;
+  height: 80px;
+  width: 92.5%;
+  opacity: 0.5;
+}
+.stripe2 {
+  position: absolute;
+  background: darkgrey;
+  height: 80px;
+  width: 100%;
+  opacity: 0.4;
+  z-index: -3;
+  bottom: 75%;
+}
+
+.stripe2.bottom {
+  position: absolute;
+  background: darkgrey;
+  height: 80px;
+  width: 100%;
+  opacity: 0.4;
+  z-index: -3;
+  top: 75%;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.greyMain1 {
+  height: 17.4%;
+  width: 9%;
+  position: absolute;
+  top: 48.9%;
+  right: 48.65%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.greyMain {
+  height: 17.4%;
+  width: 9%;
+  position: absolute;
+  top: 48.9%;
+  right: 48.65%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.greyMain.right {
+  height: 17.4%;
+  width: 9%;
+  position: absolute;
+  top: 48.9%;
+  right: 48.65%;
+  cursor: pointer;
+  opacity: 0.3;
+  z-index: 2;
+}
+.greyMain.left {
+  height: 17.4%;
+  width: 9%;
+  position: absolute;
+  top: 48.9%;
+  right: unset;
+  cursor: pointer;
+  opacity: 0.3;
+  z-index: 2;
+}
+.greyMain.bottom {
+  height: 17.4%;
+  width: 9%;
+  position: absolute;
+  top: unset;
+  bottom: 33.5%;
+  cursor: pointer;
+  opacity: 0.3;
+  z-index: 2;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.album-page {
+  background: #9a140b;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.album-bg {
+  height: auto;
+  width: 550px;
+  position: absolute;
+  right: 145px;
+  top: 8%;
+}
+
+.album-fg {
+  height: auto;
+  position: relative;
+  width: 1000px;
+  position: absolute;
+}
+
+.album-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 1111px;
+  margin: 0 auto;
+}
+
+.site-audio {
+}
+.media-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 30%;
+  right: 190px;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-txt {
+  font-size: 95px;
+}
+
+@media only screen and (max-width: 823px) {
+  .album-fg {
+    width: 730px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .media-container {
+    justify-self: center;
+    bottom: 25px;
+    right: unset;
+  }
+  .media-txt {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438);
+  }
+  .album-bg {
+    top: 0;
+    right: unset;
+    width: 100%;
+  }
+  .album-page-container {
+    justify-content: center;
+  }
+  .App {
+    left: 15px;
+  }
+  .gemini-sym {
+    right: 15px;
+  }
+  #avatar {
+    display: none;
+  }
+}
+
+.album-page-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1111px;
+}
+
+.gemini-sym {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100vw;
+  opacity: 0.13;
+}
+
+@media only screen and (max-width: 415px) {
+  .album-fg {
+    width: 535px;
+  }
+  .imageCont {
+    height: 90%;
+  }
+}
