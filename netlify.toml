@@ -1,0 +1,4 @@
+[build]
+  base    = "./grey_lee"
+  publish = "./grey_lee/build"
+  command = "yarn build"
